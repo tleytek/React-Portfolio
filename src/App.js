@@ -1,13 +1,13 @@
 import React from 'react';
-import NavBar from './components/Navbar/Navbar';
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
-
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import NavBar from './components/Navbar/Navbar';
+import Home from './pages/Home/Home';
 const App = () => (
   <Router>
-    <div>
+    <div className='container '>
       <NavBar />
-      <div className='max-height' />
+      <Route exact path='/' component={Home} />
     </div>
   </Router>
 );

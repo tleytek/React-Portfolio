@@ -1,9 +1,9 @@
-html {
-  background-image: url('./images/dactyl-manuform-2.jpg');
-  background-size: cover;
-  height: 100%;
-}
-
 * {
   box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 45px auto;
+  height: 100vh;
 }
